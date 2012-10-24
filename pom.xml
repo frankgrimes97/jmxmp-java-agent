@@ -51,8 +51,6 @@
             <groupId>javax.management</groupId>
             <artifactId>jmxremote_optional</artifactId>
             <version>1.0.1_04</version>
-            <scope>system</scope>
-            <systemPath>/Users/emanuelpordes/Downloads/jmxremote_optional-1.0.1_04.jar</systemPath>
         </dependency>
     </dependencies>
 </project>
