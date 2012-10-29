@@ -4,7 +4,7 @@
 
     <groupId>com.bloom</groupId>
     <artifactId>jmxmp-java-agent</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <packaging>jar</packaging>
 
     <name>JMXMPJavaAgent</name>
@@ -14,6 +14,11 @@
     </properties>
 
     <distributionManagement>
+        <repository>
+            <id>bloom-releases-repository</id>
+            <name>Bloom Releases Repository</name>
+            <url>http://office.bloomdigital.com:8081/nexus/content/repositories/releases/</url>
+        </repository>
         <snapshotRepository>
             <id>bloom-snapshots-repository</id>
             <name>Bloom Snapshots Repository</name>
