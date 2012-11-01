@@ -1,0 +1,12 @@
+Simplifies SSH tunneling JMX over the JMXMP protocol.
+This way, only one statically-defined port is required, as opposed to the default RMI multi-dynamic-port flustercluck.
+
+Refer to http://blog.markfeeney.com/2010/10/jmx-through-ssh-tunnel.html for details
+
+Sample usage:
+
+  java -javaagent:jmxmp-java-agent-1.0.jar -cp jmxremote_optional-1.0.1_04.jar:example.jar -Djavax.management.remote.JMXServiceURL= service:jmx:jmxmp://127.0.0.1:12345 com.foo.example.MyMain
+
+Connecting over SSH tunnel using VisualVM:
+
+  jvisualvm -cp:a jmxremote_optional-1.0.1_04.jar
